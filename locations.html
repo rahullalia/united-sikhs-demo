@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Chapters | UNITED SIKHS</title>
+    <meta name="description"
+        content="UNITED SIKHS operates in over 30 countries with chapters across North America, Europe, Asia, and the Pacific." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☬</text></svg>" />
+    <style>
+        .page-hero {
+            padding: 140px 0 60px;
+            background: var(--bg-hero);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 12px;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .map-section {
+            padding: 40px 0 60px;
+            background: var(--bg-white);
+            text-align: center;
+        }
+
+        .map-section img {
+            max-width: 900px;
+            width: 100%;
+            border-radius: var(--radius-lg);
+            margin: 0 auto;
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .chapter-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            transition: all 0.3s var(--ease-smooth);
+        }
+
+        .chapter-card:hover {
+            border-color: var(--border-accent);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .chapter-card .flag {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .chapter-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin-bottom: 14px;
+        }
+
+        .chapter-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .chapter-contact a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            transition: color 0.3s;
+        }
+
+        .chapter-contact a:hover {
+            color: var(--saffron);
+        }
+
+        .chapter-contact .icon {
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .chapter-address {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-top: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .chapters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .chapters-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="images/logo-lockup.png" alt="UNITED SIKHS"
+                class="nav-logo-img" /></a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#programs" class="nav-link">Programs</a>
+        <a href="index.html#articles" class="nav-link">News</a>
+        <a href="locations.html" class="nav-link active">Chapters</a>
+        <a href="press.html" class="nav-link">Press</a>
+        <a href="donate.html" class="nav-donate">Donate</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label" style="justify-content:center;">Our Chapters</span>
+            <h1>Global Presence,<br />Local Impact</h1>
+            <p>UNITED SIKHS operates across 30+ countries with dedicated chapters delivering humanitarian aid, advocacy,
+                and education worldwide.</p>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <img src="images/global-map.jpg" alt="UNITED SIKHS global operations map" />
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-muted);">
+        <div class="container">
+            <div class="chapters-grid">
+
+                <div class="chapter-card">
+                    <div class="flag">🇺🇸</div>
+                    <h3>United States (HQ)</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+18558786333"><span class="icon">📞</span> +1-855-US-UMEED (878-6333)</a>
+                        <a href="mailto:unitedsikhs-usa@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-usa@unitedsikhs.org</a>
+                        <p class="chapter-address">JAF, POB 7203, New York, NY 10116, USA</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇨🇦</div>
+                    <h3>Canada</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:19056722245"><span class="icon">📞</span> 1-905-672-2245</a>
+                        <a href="mailto:unitedsikhs-canada@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-canada@unitedsikhs.org</a>
+                        <p class="chapter-address">6800 Rexwood Road, Mississauga, ON L4V 1L8</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇬🇧</div>
+                    <h3>United Kingdom</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+448701993328"><span class="icon">📞</span> (0044) 870 1993328</a>
+                        <a href="mailto:unitedsikhs-uk@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-uk@unitedsikhs.org</a>
+                        <p class="chapter-address">PO Box 43799, London, W14 8SS</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇮🇳</div>
+                    <h3>India</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+919999053503"><span class="icon">📞</span> +91 9999053503</a>
+                        <a href="mailto:unitedsikhs-india@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-india@unitedsikhs.org</a>
+                        <p class="chapter-address">P.O. Box No. 19, Amritsar, 143001, Panjab</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇫🇷</div>
+                    <h3>France</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+33616176205"><span class="icon">📞</span> +33 616 176 205</a>
+                        <a href="mailto:unitedsikhs-fr@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-fr@unitedsikhs.org</a>
+                        <p class="chapter-address">20, Allee des Geais, 95200 Sarcelles</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇮🇪</div>
+                    <h3>Ireland</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+353857294425"><span class="icon">📞</span> +353 (0) 85 729 4425</a>
+                        <a href="mailto:unitedsikhs-ireland@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-ireland@unitedsikhs.org</a>
+                        <p class="chapter-address">4 Castlegateway, Adamstown Castle, Lucan, Co Dublin</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇧🇪</div>
+                    <h3>Belgium</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+32465821087"><span class="icon">📞</span> +32 465 821 087</a>
+                        <a href="mailto:unitedsikhs-belgium@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-belgium@unitedsikhs.org</a>
+                        <p class="chapter-address">Steenweg 418, 3570 Alken, Limburg</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇦🇺</div>
+                    <h3>Australia</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+61420391982"><span class="icon">📞</span> +61 420 391 982</a>
+                        <a href="mailto:unitedsikhs-aus@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-aus@unitedsikhs.org</a>
+                        <p class="chapter-address">PO Box 425, Epping, Victoria 3076</p>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <div class="flag">🇵🇰</div>
+                    <h3>Pakistan</h3>
+                    <div class="chapter-contact">
+                        <a href="tel:+923339113230"><span class="icon">📞</span> +92 333 911 3230</a>
+                        <a href="mailto:unitedsikhs-pakistan@unitedsikhs.org"><span class="icon">✉️</span>
+                            unitedsikhs-pakistan@unitedsikhs.org</a>
+                        <p class="chapter-address">176-A, UG Deans Trade Centre, FC Chowk, Peshawar</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="cta">
+        <div class="cta-glow">
+            <div class="cta-glow-inner"></div>
+        </div>
+        <div class="cta-content container">
+            <span class="section-label" style="justify-content:center;">Get Involved</span>
+            <h2>Start a Chapter in Your City</h2>
+            <p>Want to bring UNITED SIKHS to your community? Reach out to learn how you can establish a local chapter.
+            </p>
+            <div class="hero-actions" style="justify-content:center;margin-top:28px;">
+                <a href="join.html" class="btn-primary">Volunteer with Us →</a>
+                <a href="mailto:contact@unitedsikhs.org" class="btn-secondary">Contact HQ ✉️</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;padding-top:0;">
+                <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="mailto:contact@unitedsikhs.org">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

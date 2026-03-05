@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press Releases | UNITED SIKHS</title>
+    <meta name="description"
+        content="Latest press releases, news, and media coverage of UNITED SIKHS' humanitarian work around the world." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☬</text></svg>" />
+    <style>
+        .page-hero {
+            padding: 140px 0 60px;
+            background: var(--bg-hero);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 12px;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--saffron);
+            color: #fff;
+            border-color: var(--saffron);
+        }
+
+        .press-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .press-item {
+            display: grid;
+            grid-template-columns: 120px 1fr auto;
+            gap: 24px;
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .press-item:hover {
+            background: var(--saffron-50);
+            margin: 0 -20px;
+            padding: 24px 20px;
+            border-radius: var(--radius-md);
+            border-color: transparent;
+        }
+
+        .press-item:first-child {
+            border-top: 1px solid var(--border);
+        }
+
+        .press-date {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .press-date .day {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--text-primary);
+            display: block;
+            line-height: 1;
+        }
+
+        .press-content h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            transition: color 0.3s;
+        }
+
+        .press-item:hover .press-content h3 {
+            color: var(--saffron);
+        }
+
+        .press-content p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .press-tag {
+            padding: 4px 12px;
+            background: var(--bg-muted);
+            border-radius: var(--radius-full);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            white-space: nowrap;
+            height: fit-content;
+        }
+
+        .press-tag.sikh-aid {
+            background: #FFF3E0;
+            color: #E65100;
+        }
+
+        .press-tag.ichra {
+            background: #E8EAF6;
+            color: #1A237E;
+        }
+
+        .press-tag.ceed {
+            background: #E8F5E9;
+            color: #2E7D32;
+        }
+
+        .press-tag.general {
+            background: var(--bg-muted);
+            color: var(--text-muted);
+        }
+
+        .load-more {
+            display: block;
+            margin: 40px auto 0;
+            padding: 14px 36px;
+        }
+
+        .media-contact {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+            padding: 36px;
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            margin-top: 56px;
+        }
+
+        .media-contact-text h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        .media-contact-text p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .media-contact-text a {
+            color: var(--saffron);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .press-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .press-tag {
+                justify-self: start;
+            }
+
+            .media-contact {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="images/logo-lockup.png" alt="UNITED SIKHS"
+                class="nav-logo-img" /></a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#programs" class="nav-link">Programs</a>
+        <a href="index.html#articles" class="nav-link">News</a>
+        <a href="locations.html" class="nav-link">Chapters</a>
+        <a href="press.html" class="nav-link active">Press</a>
+        <a href="donate.html" class="nav-donate">Donate</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label" style="justify-content:center;">Newsroom</span>
+            <h1>Press Releases<br />& Media</h1>
+            <p>Stay updated with the latest news, press releases, and initiatives from UNITED SIKHS.</p>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-muted);">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Sikh Aid</button>
+                <button class="filter-btn">ICHRA</button>
+                <button class="filter-btn">CEED</button>
+                <button class="filter-btn">General</button>
+            </div>
+
+            <div class="press-list">
+                <a href="https://unitedsikhs.org/cdl-cancellations-are-leaving-hardworking-drivers-without-income/"
+                    target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">04</span>Mar 2025</div>
+                    <div class="press-content">
+                        <h3>CDL Cancellations Are Leaving Hardworking Drivers Without Income</h3>
+                        <p>UNITED SIKHS calls for immediate action as commercial driver's license cancellations
+                            disproportionately affect Sikh truck drivers across the country.</p>
+                    </div>
+                    <span class="press-tag ichra">ICHRA</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/united-sikhs-responds-to-white-house-comment-unfairly-targeting-sikh-drivers/"
+                    target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">27</span>Feb 2025</div>
+                    <div class="press-content">
+                        <h3>UNITED SIKHS Responds to White House Comment Unfairly Targeting Sikh Drivers</h3>
+                        <p>In a swift response, UNITED SIKHS' legal team addresses the White House commentary that
+                            unfairly singles out Sikh commercial drivers.</p>
+                    </div>
+                    <span class="press-tag ichra">ICHRA</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/celebrating-women-who-serve-humanity/" target="_blank"
+                    class="press-item">
+                    <div class="press-date"><span class="day">08</span>Mar 2025</div>
+                    <div class="press-content">
+                        <h3>Celebrating Women Who Serve Humanity</h3>
+                        <p>On International Women's Day, UNITED SIKHS honors women who dedicate their lives to community
+                            service, breaking barriers and inspiring generations.</p>
+                    </div>
+                    <span class="press-tag ceed">CEED</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/commemorating-the-world-day-of-social-justice/" target="_blank"
+                    class="press-item">
+                    <div class="press-date"><span class="day">20</span>Feb 2025</div>
+                    <div class="press-content">
+                        <h3>Commemorating the World Day of Social Justice</h3>
+                        <p>UNITED SIKHS hosts community events worldwide to mark Social Justice Day, reaffirming our
+                            commitment to equality and human dignity.</p>
+                    </div>
+                    <span class="press-tag ceed">CEED</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/" target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">15</span>Feb 2025</div>
+                    <div class="press-content">
+                        <h3>Global Civil Rights Survey 2025: Participate Now</h3>
+                        <p>UNITED SIKHS launches a comprehensive civil rights survey to understand the challenges faced
+                            by minority communities worldwide.</p>
+                    </div>
+                    <span class="press-tag general">Survey</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/" target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">10</span>Jan 2025</div>
+                    <div class="press-content">
+                        <h3>Panjab Floods: Phase 3 Recovery Update</h3>
+                        <p>After months of dedicated relief operations, UNITED SIKHS' Sikh Aid team shares progress on
+                            long-term rehabilitation and livelihood restoration programs.</p>
+                    </div>
+                    <span class="press-tag sikh-aid">Sikh Aid</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/" target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">20</span>Dec 2024</div>
+                    <div class="press-content">
+                        <h3>Annual Impact Report 2024 Released</h3>
+                        <p>UNITED SIKHS releases the full annual report covering humanitarian activities, advocacy
+                            victories, and educational impact across all three verticals.</p>
+                    </div>
+                    <span class="press-tag general">Report</span>
+                </a>
+
+                <a href="https://unitedsikhs.org/" target="_blank" class="press-item">
+                    <div class="press-date"><span class="day">01</span>Jul 2024</div>
+                    <div class="press-content">
+                        <h3>Emergency Response: Hurricane Beryl, Caribbean Islands</h3>
+                        <p>UNITED SIKHS deploys emergency response teams to Caribbean islands impacted by Hurricane
+                            Beryl, providing food, water, and shelter.</p>
+                    </div>
+                    <span class="press-tag sikh-aid">Sikh Aid</span>
+                </a>
+            </div>
+
+            <button class="btn-secondary load-more">Load More Articles →</button>
+
+            <div class="media-contact">
+                <div style="font-size:2.5rem;">📰</div>
+                <div class="media-contact-text">
+                    <h3>Media Inquiries</h3>
+                    <p>For press inquiries, interview requests, or media kits, please contact our communications team at
+                        <a href="mailto:contact@unitedsikhs.org">contact@unitedsikhs.org</a> or call <a
+                            href="tel:+18558786333">+1-855-US-UMEED (878-6333)</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;padding-top:0;">
+                <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="mailto:contact@unitedsikhs.org">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter bar interactivity
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

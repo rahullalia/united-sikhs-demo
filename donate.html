@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate | UNITED SIKHS</title>
+    <meta name="description"
+        content="Support UNITED SIKHS' humanitarian work. Every donation helps provide disaster relief, legal aid, and education to communities worldwide." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☬</text></svg>" />
+    <style>
+        .page-hero {
+            padding: 140px 0 60px;
+            background: var(--bg-hero);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 12px;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .donate-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .donate-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 40px 36px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .donate-card h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .donate-card>p {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .amount-btn {
+            padding: 14px;
+            background: var(--bg-muted);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-md);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-smooth);
+            text-align: center;
+        }
+
+        .amount-btn:hover,
+        .amount-btn.selected {
+            border-color: var(--saffron);
+            background: var(--saffron-50);
+            color: var(--saffron);
+        }
+
+        .custom-amount {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            font-family: var(--font-body);
+            margin-bottom: 20px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .custom-amount:focus {
+            border-color: var(--saffron);
+        }
+
+        .freq-toggle {
+            display: flex;
+            gap: 0;
+            margin-bottom: 24px;
+        }
+
+        .freq-btn {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid var(--border);
+            background: var(--bg-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            font-family: var(--font-body);
+        }
+
+        .freq-btn:first-child {
+            border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+        }
+
+        .freq-btn:last-child {
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        .freq-btn.selected {
+            background: var(--saffron);
+            color: #fff;
+            border-color: var(--saffron);
+        }
+
+        .donate-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--saffron), var(--saffron-dark));
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(230, 81, 0, 0.3);
+            transition: all 0.3s var(--ease-smooth);
+            font-family: var(--font-body);
+        }
+
+        .donate-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(230, 81, 0, 0.4);
+        }
+
+        .where-goes {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 40px 36px;
+        }
+
+        .where-goes h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .allocation-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .allocation-item:last-child {
+            border-bottom: none;
+        }
+
+        .allocation-bar {
+            flex: 1;
+            height: 8px;
+            background: var(--bg-muted);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .allocation-bar .fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .allocation-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            min-width: 150px;
+        }
+
+        .allocation-pct {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--saffron);
+            min-width: 40px;
+            text-align: right;
+        }
+
+        .impact-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .impact-mini {
+            text-align: center;
+            padding: 20px 14px;
+            background: var(--saffron-50);
+            border-radius: var(--radius-md);
+        }
+
+        .impact-mini .amt {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--saffron);
+        }
+
+        .impact-mini p {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .donate-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="images/logo-lockup.png" alt="UNITED SIKHS"
+                class="nav-logo-img" /></a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#programs" class="nav-link">Programs</a>
+        <a href="index.html#articles" class="nav-link">News</a>
+        <a href="locations.html" class="nav-link">Chapters</a>
+        <a href="press.html" class="nav-link">Press</a>
+        <a href="donate.html" class="nav-donate" style="background:var(--saffron-dark);">Donate</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label" style="justify-content:center;">Support Our Mission</span>
+            <h1>Your Generosity<br />Changes Lives</h1>
+            <p>Every contribution directly funds humanitarian aid, civil rights advocacy, and community education
+                programs across 30+ countries.</p>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-muted);">
+        <div class="container">
+            <div class="donate-grid">
+                <div class="donate-card">
+                    <h2>Make a Donation</h2>
+                    <p>Choose an amount or enter a custom figure. All donations are tax-deductible.</p>
+
+                    <div class="freq-toggle">
+                        <button class="freq-btn selected"
+                            onclick="this.parentNode.querySelectorAll('.freq-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected');">One-time</button>
+                        <button class="freq-btn"
+                            onclick="this.parentNode.querySelectorAll('.freq-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected');">Monthly</button>
+                    </div>
+
+                    <div class="amount-grid">
+                        <button class="amount-btn" onclick="selectAmount(this, 25)">$25</button>
+                        <button class="amount-btn selected" onclick="selectAmount(this, 50)">$50</button>
+                        <button class="amount-btn" onclick="selectAmount(this, 100)">$100</button>
+                        <button class="amount-btn" onclick="selectAmount(this, 250)">$250</button>
+                        <button class="amount-btn" onclick="selectAmount(this, 500)">$500</button>
+                        <button class="amount-btn" onclick="selectAmount(this, 1000)">$1,000</button>
+                    </div>
+
+                    <input type="text" class="custom-amount" placeholder="Or enter custom amount ($)"
+                        id="customAmount" />
+
+                    <button class="donate-submit"
+                        onclick="alert('Thank you for your generosity! In the live version this would redirect to a secure payment processor.')">
+                        Donate Now ❤️
+                    </button>
+
+                    <p
+                        style="font-size:0.75rem;color:var(--text-muted);margin-top:14px;text-align:center;line-height:1.5;">
+                        🔒 Secure payment. UNITED SIKHS is a 501(c)(3) non-profit. EIN: 11-3598539.<br />All donations
+                        are tax-deductible.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="where-goes">
+                        <h3>Where Your Money Goes</h3>
+
+                        <div class="allocation-item">
+                            <span class="allocation-label">🕊️ Sikh Aid</span>
+                            <div class="allocation-bar">
+                                <div class="fill" style="width:45%;background:var(--saffron);"></div>
+                            </div>
+                            <span class="allocation-pct">45%</span>
+                        </div>
+                        <div class="allocation-item">
+                            <span class="allocation-label">⚖️ ICHRA</span>
+                            <div class="allocation-bar">
+                                <div class="fill" style="width:25%;background:var(--navy);"></div>
+                            </div>
+                            <span class="allocation-pct">25%</span>
+                        </div>
+                        <div class="allocation-item">
+                            <span class="allocation-label">📚 CEED</span>
+                            <div class="allocation-bar">
+                                <div class="fill" style="width:20%;background:var(--gold);"></div>
+                            </div>
+                            <span class="allocation-pct">20%</span>
+                        </div>
+                        <div class="allocation-item">
+                            <span class="allocation-label">⚙️ Operations</span>
+                            <div class="allocation-bar">
+                                <div class="fill" style="width:10%;background:var(--text-muted);"></div>
+                            </div>
+                            <span class="allocation-pct">10%</span>
+                        </div>
+                    </div>
+
+                    <div class="impact-cards">
+                        <div class="impact-mini">
+                            <div class="amt">$25</div>
+                            <p>Provides 100 meals at a langar</p>
+                        </div>
+                        <div class="impact-mini">
+                            <div class="amt">$100</div>
+                            <p>Legal aid consultation for one family</p>
+                        </div>
+                        <div class="impact-mini">
+                            <div class="amt">$500</div>
+                            <p>Scholarship for one student for a year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;padding-top:0;">
+                <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="locations.html">Chapters</a>
+                    <a href="mailto:contact@unitedsikhs.org">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(btn, val) {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            document.getElementById('customAmount').value = '$' + val.toLocaleString();
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

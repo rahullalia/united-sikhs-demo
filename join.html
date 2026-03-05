@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | UNITED SIKHS</title>
+    <meta name="description"
+        content="Volunteer with UNITED SIKHS. Join our global network of humanitarians making a difference in communities around the world." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☬</text></svg>" />
+    <style>
+        .page-hero {
+            padding: 140px 0 60px;
+            background: var(--bg-hero);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 12px;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .join-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 56px;
+            align-items: start;
+        }
+
+        .join-info h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            margin-bottom: 14px;
+        }
+
+        .join-info>p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .why-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 14px;
+            padding: 16px;
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: all 0.3s;
+        }
+
+        .why-item:hover {
+            border-color: var(--border-accent);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .why-item .icon {
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .why-item h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .why-item p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .join-form-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 40px 36px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .join-form-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            margin-bottom: 6px;
+        }
+
+        .join-form-card>p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.3s;
+            background: var(--bg-body);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--saffron);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, var(--saffron), var(--saffron-dark));
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(230, 81, 0, 0.25);
+            transition: all 0.3s var(--ease-smooth);
+            margin-top: 8px;
+            font-family: var(--font-body);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(230, 81, 0, 0.35);
+        }
+
+        .hero-image-join {
+            margin-top: 28px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image-join img {
+            width: 100%;
+            aspect-ratio: 16/7;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .join-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="images/logo-lockup.png" alt="UNITED SIKHS"
+                class="nav-logo-img" /></a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#programs" class="nav-link">Programs</a>
+        <a href="index.html#articles" class="nav-link">News</a>
+        <a href="locations.html" class="nav-link">Chapters</a>
+        <a href="press.html" class="nav-link">Press</a>
+        <a href="donate.html" class="nav-donate">Donate</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label" style="justify-content:center;">Volunteer</span>
+            <h1>Be the Change<br />You Wish to See</h1>
+            <p>Join thousands of volunteers around the world who are making a difference through seva, selfless
+                service.</p>
+            <div class="hero-image-join">
+                <img src="images/volunteer.jpeg" alt="UNITED SIKHS volunteer team" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-muted);">
+        <div class="container">
+            <div class="join-layout">
+                <div class="join-info">
+                    <h2>Why Volunteer with UNITED SIKHS?</h2>
+                    <p>Whether you have a few hours or can commit long-term, there's a role for everyone. Our volunteers
+                        are the backbone of our global operations.</p>
+
+                    <div class="why-list">
+                        <div class="why-item">
+                            <span class="icon">🌍</span>
+                            <div>
+                                <h4>Global Impact</h4>
+                                <p>Work on projects across 30+ countries, from disaster relief to education programs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="icon">🤝</span>
+                            <div>
+                                <h4>Community Connection</h4>
+                                <p>Meet like-minded individuals committed to humanitarian service and social justice.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="icon">📚</span>
+                            <div>
+                                <h4>Skill Development</h4>
+                                <p>Gain experience in project management, advocacy, communications, and field
+                                    operations.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="icon">❤️</span>
+                            <div>
+                                <h4>Seva: Selfless Service</h4>
+                                <p>Live the Sikh values of compassion and service by directly helping those in need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="join-form-card">
+                    <h3>Volunteer Registration</h3>
+                    <p>Fill out the form below and our team will reach out to connect you with opportunities.</p>
+
+                    <form
+                        onsubmit="event.preventDefault();alert('Thank you for signing up! In the live version this would submit to our volunteer coordination system.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" placeholder="Enter first name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" placeholder="Enter last name" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="you@example.com" required />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" />
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Your Location *</label>
+                                <input type="text" id="location" placeholder="City, Country" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Area of Interest *</label>
+                            <select id="interest" required>
+                                <option value="" disabled selected>Select a program</option>
+                                <option value="sikh-aid">Sikh Aid: Humanitarian Relief</option>
+                                <option value="ichra">ICHRA: Civil & Human Rights</option>
+                                <option value="ceed">CEED: Education & Empowerment</option>
+                                <option value="comms">Communications & Social Media</option>
+                                <option value="fundraising">Fundraising & Events</option>
+                                <option value="any">Open to Any Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Us About Yourself</label>
+                            <textarea id="message"
+                                placeholder="Your background, skills, and why you'd like to volunteer..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">Join as Volunteer →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;padding-top:0;">
+                <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="mailto:contact@unitedsikhs.org">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
