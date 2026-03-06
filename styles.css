@@ -1607,13 +1607,13 @@ ol {
   }
 
   .nav-link {
-    padding: 8px 12px;
-    font-size: 0.78rem;
+    padding: 8px 6px;
+    font-size: 0.7rem;
   }
 
   .nav-donate {
-    padding: 8px 14px;
-    font-size: 0.78rem;
+    padding: 8px 10px;
+    font-size: 0.7rem;
   }
 
   .hero {
