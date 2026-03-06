@@ -688,6 +688,27 @@ video {
     .main-bento-grid {
         margin-top: 20px;
     }
+
+    .navbar {
+        top: auto;
+        bottom: 14px;
+        padding: 6px 8px;
+        border-radius: 9999px;
+    }
+
+    .nav-logo-img {
+        height: 20px;
+    }
+
+    .nav-link {
+        padding: 8px 6px;
+        font-size: 0.7rem;
+    }
+
+    .nav-donate {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
 }
 
 .video-grid {

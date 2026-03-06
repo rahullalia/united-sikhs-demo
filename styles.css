@@ -157,8 +157,8 @@ ol {
 /* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
-  top: auto;
-  bottom: 24px;
+  top: 20px;
+  bottom: auto;
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
@@ -1600,7 +1600,8 @@ ol {
   .navbar {
     top: auto;
     bottom: 14px;
-    padding: 4px;
+    padding: 6px 8px;
+    border-radius: var(--radius-full);
   }
 
   .nav-logo-img {
