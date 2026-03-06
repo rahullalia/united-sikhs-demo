@@ -956,6 +956,7 @@ ol {
   line-height: 1.6;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1601,8 +1602,8 @@ ol {
     padding: 4px;
   }
 
-  .nav-logo span:not(.khanda) {
-    display: none;
+  .nav-logo-img {
+    height: 20px;
   }
 
   .nav-link {

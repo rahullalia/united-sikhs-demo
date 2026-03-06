@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICHRA | International Civil and Human Rights Advocacy</title>
+    <meta name="description"
+        content="Dedicated to defending the civil and human rights of minority communities globally." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo-lockup.png" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="../index.html" class="nav-logo">
+            <img src="../images/logo-lockup.png" alt="UNITED SIKHS" class="nav-logo-img" />
+        </a>
+        <a href="../index.html#about" class="nav-link"><span class="link-text">About</span></a>
+        <a href="../index.html#programs" class="nav-link"><span class="link-text">Programs</span></a>
+        <a href="../index.html#articles" class="nav-link"><span class="link-text">News</span></a>
+        <a href="../locations.html" class="nav-link"><span class="link-text">Chapters</span></a>
+        <a href="../press.html" class="nav-link"><span class="link-text">Press</span></a>
+        <a href="../donate.html" class="nav-donate">Donate</a>
+    </nav>
+
+    <!-- HEADER BANNER -->
+    <section class="hero">
+        <div class="hero-splicer" id="heroSplicer">
+            <div class="splice-pane pane-1">
+                <img src="images/hero-vert-1.jpg" alt="Advocacy Event 1" />
+            </div>
+            <div class="splice-pane pane-2">
+                <img src="images/hero-vert-2.jpg" alt="Advocacy Event 2" />
+            </div>
+            <div class="splice-pane pane-3">
+                <img src="images/hero-vert-3.jpg" alt="Advocacy Event 3" />
+            </div>
+            <div class="splice-pane pane-4">
+                <img src="images/hero-vert-4.jpg" alt="Advocacy Event 4" />
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle reveal">International Civil & Human Rights Advocacy</span>
+            <h1 class="hero-title reveal-blur reveal-delay-1">Defending Justice.<br />Empowering Voices.</h1>
+            <p class="hero-desc reveal reveal-delay-2">We stand with global advocates to stop hate crimes, overturn
+                unfair policies, and secure civil liberties for the marginalized.</p>
+        </div>
+    </section>
+
+    <div class="container relative z-10" style="margin-top: -60px; position: relative;">
+
+
+        <!-- LATEST PRESS RELEASES (TOP GRID) -->
+        <div class="section-header reveal">
+            <span>Latest Press Releases</span>
+        </div>
+        <div class="press-grid">
+            <a href="#" class="bento-card press-card reveal">
+                <h3>CDL Cancellations Are Leaving Hardworking Drivers Without Income</h3>
+                <p>UNITED SIKHS calls for immediate action as thousands of commercial drivers face discriminatory
+                    license cancellations...</p>
+                <div class="read-more">Read Full Release</div>
+            </a>
+            <a href="#" class="bento-card press-card reveal reveal-delay-1">
+                <h3>UNITED SIKHS Responds to White House Comment Unfairly Targeting Sikh Drivers</h3>
+                <p>Our legal team addresses the recent commentary unfairly singling out Sikh commercial drivers in
+                    federal transportation...</p>
+                <div class="read-more">Read Full Release</div>
+            </a>
+            <a href="#" class="bento-card press-card reveal reveal-delay-2">
+                <h3>Legal Victory: Court Upholds Religious Accommodation for Kirpan</h3>
+                <p>A landmark ruling secures the rights of Sikh students to wear articles of faith on public school
+                    campuses nationwide...</p>
+                <div class="read-more">Read Full Release</div>
+            </a>
+        </div>
+
+        <!-- MAIN BENTO BOARD -->
+        <div class="main-bento-grid">
+
+            <!-- LEFT COL: Media & Photos -->
+            <div class="left-col">
+                <div class="bento-card reveal" style="margin-bottom: 24px;">
+                    <h4 style="margin-bottom: 16px; font-size: 0.95rem; color: var(--white);">Media Coverage</h4>
+                    <ul class="media-list">
+                        <li><a href="#">The Guardian: Hate Crime Report 2024</a></li>
+                        <li><a href="#">BBC News: Advocating for Minority Voices</a></li>
+                        <li><a href="#">NYT Feature: Truckers Fight Unfair Laws</a></li>
+                        <li><a href="#">NBC Interview: Civil Rights Symposium</a></li>
+                    </ul>
+                </div>
+
+                <div class="bento-card reveal">
+                    <h4 style="margin-bottom: 16px; font-size: 0.95rem; color: var(--white);">Our Work</h4>
+                    <div class="photo-gallery">
+                        <img src="images/assault.jpg" alt="Protest" class="gallery-img" />
+                        <img src="images/kirpan.jpg" alt="Kirpan Meeting" class="gallery-img" />
+                        <img src="images/advocacy.jpg" alt="Legal Advocacy" class="gallery-img" />
+                        <img src="images/protest.jpg" alt="UN Convention" class="gallery-img" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTER COL: Featured Video & Director's Letters -->
+            <div class="center-col">
+                <div class="bento-card reveal reveal-delay-1"
+                    style="padding: 0; border: none; background: transparent;">
+                    <div class="section-header" style="margin: 0 0 16px 0;"><span>Featured Media</span></div>
+                    <div class="featured-video-container" id="videoContainer">
+                        <video id="mainVideo" controls style="display: none;">
+                            <source src="videos/featured-video.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-overlay" id="videoOverlay">
+                            <div class="play-btn">▶</div>
+                        </div>
+                        <img src="images/video-poster.jpg" alt="Video Thumbnail"
+                            style="width: 100%; display: block; object-fit: cover; aspect-ratio: 16/9;"
+                            id="videoPoster" />
+                    </div>
+                </div>
+
+                <div class="bento-card reveal reveal-delay-1">
+                    <div class="section-header" style="margin-top: 0;"><span>Letters From The Director</span></div>
+
+                    <div class="director-letter">
+                        <p>"The foundation of a just society rests on the assurance that the marginalized are not
+                            silenced by systemic policies... Our fight for commercial drivers is paramount this
+                            quarter."</p>
+                        <a href="#" class="read-more" style="font-size: 0.75rem;">Read Full Letter</a>
+                    </div>
+
+                    <div class="director-letter">
+                        <p>"As we witness a rise in hate-motivated incidents globally, it is our collective duty to
+                            document, report, and prosecute these violations with relentless perseverance."</p>
+                        <a href="#" class="read-more" style="font-size: 0.75rem;">Read Full Letter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COL: Links & Mini Videos -->
+            <div class="right-col">
+                <div class="bento-card reveal reveal-delay-2" style="margin-bottom: 24px;">
+                    <h4 style="margin-bottom: 16px; font-size: 0.95rem; color: var(--white);">Quick Links</h4>
+                    <div class="quick-links">
+                        <a href="#">Report a Hate Crime / Incident</a>
+                        <a href="#">Volunteer Legal Counsel</a>
+                        <a href="#">United Nations Advocacy Efforts</a>
+                        <a href="#">Annual Civil Rights Report PDF</a>
+                    </div>
+                </div>
+
+                <div class="bento-card reveal reveal-delay-2">
+                    <h4 style="margin-bottom: 16px; font-size: 0.95rem; color: var(--white);">Video Archives</h4>
+                    <div class="video-thumbnails">
+                        <div class="thumb-card"><img src="images/kirpan.jpg" alt="Video" />
+                            <div class="thumb-overlay"><span>▶</span></div>
+                        </div>
+                        <div class="thumb-card"><img src="images/assault.jpg" alt="Video" />
+                            <div class="thumb-overlay"><span>▶</span></div>
+                        </div>
+                        <div class="thumb-card"><img src="images/protest.jpg" alt="Video" />
+                            <div class="thumb-overlay"><span>▶</span></div>
+                        </div>
+                        <div class="thumb-card"><img src="images/advocacy.jpg" alt="Video" />
+                            <div class="thumb-overlay"><span>▶</span></div>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more" style="margin-top: 16px; justify-content: flex-end;">More Videos</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- KNOW YOUR RIGHTS (BOTTOM GRID) -->
+        <div class="section-header reveal" style="margin-top: 56px;">
+            <span>Know Your Rights — Presentations</span>
+        </div>
+        <div class="rights-grid" style="margin-bottom: 80px;">
+            <div class="bento-card rights-card reveal">
+                <h3>Tips for Immigrants</h3>
+                <p>A comprehensive guide on identifying and safely navigating interactions, accessing services, and
+                    understanding legal boundaries.</p>
+                <a href="https://unitedsikhs.org/wp-content/uploads/2021/09/Tips-for-Immigrants-English-1.pdf"
+                    target="_blank" class="btn-download">⬇ Download PDF</a>
+            </div>
+            <div class="bento-card rights-card reveal reveal-delay-1">
+                <h3>Law Enforcement Interactions (ICE)</h3>
+                <p>Understanding your constitutional rights during traffic stops, interrogations, and public assemblies
+                    with ICE officials.</p>
+                <a href="https://unitedsikhs.org/wp-content/uploads/2021/09/kyr-ice-flyer.pdf" target="_blank"
+                    class="btn-download">⬇ Download PDF</a>
+            </div>
+            <div class="bento-card rights-card reveal reveal-delay-2">
+                <h3>Jury Duty and the Kirpan</h3>
+                <p>Legal precedents and documentation defending the right to carry the Kirpan and wear the Dastaar
+                    (turban) in court and public sectors.</p>
+                <a href="https://unitedsikhs.org/wp-content/uploads/2021/09/Jury-Duty-and-the-Kirpan-1.pdf"
+                    target="_blank" class="btn-download">⬇ Download PDF</a>
+            </div>
+        </div>
+
+        <!-- EXPANDED VIDEO ARCHIVES -->
+        <div class="section-header reveal" style="margin-top: 56px;">
+            <span>Expanded Video Archives</span>
+        </div>
+
+        <div class="bento-card reveal" style="margin-bottom: 24px; padding: 32px;">
+            <h3 class="col-title">Media Presence</h3>
+            <div class="video-grid">
+                <video controls poster="images/poster-media-1.jpg" preload="none">
+                    <source src="videos/media-1.mp4" type="video/mp4" />
+                </video>
+                <video controls poster="images/poster-media-2.jpg" preload="none">
+                    <source src="videos/media-2.mp4" type="video/mp4" />
+                </video>
+                <video controls poster="images/video-poster.jpg" preload="none">
+                    <source src="videos/featured-video.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="bento-card reveal reveal-delay-1" style="margin-bottom: 80px; padding: 32px;">
+            <h3 class="col-title">Community Presence</h3>
+            <div class="video-grid video-grid-vertical">
+                <video controls poster="images/poster-comm-1.jpg" preload="none">
+                    <source src="videos/community-1.mp4" type="video/mp4" />
+                </video>
+                <video controls poster="images/poster-comm-2.jpg" preload="none">
+                    <source src="videos/community-2.mp4" type="video/mp4" />
+                </video>
+                <video controls poster="images/poster-comm-3.jpg" preload="none">
+                    <source src="videos/community-3.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+    </div> <!-- End Main Container -->
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="../images/logo-lockup.png" alt="UNITED SIKHS"
+                            style="height:36px;" /></div>
+                    <p>UN-affiliated international non-profit committed to empowering communities through seva, justice,
+                        and education. Recognize the human race as one.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/unitedsikhs" aria-label="Facebook" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/UnitedSikhs" aria-label="Twitter" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/unitedsikhs/" aria-label="Instagram" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/user/UnitedSikhsTV" aria-label="YouTube" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links" style="list-style: none; padding: 0;">
+                        <li><a href="https://unitedsikhs.org" target="_blank">Home</a></li>
+                        <li><a href="https://unitedsikhs.org/about" target="_blank">About Us</a></li>
+                        <li><a href="https://unitedsikhs.org/gurudwara-partners" target="_blank">Gurudwara Partners</a>
+                        </li>
+                        <li><a href="https://unitedsikhs.org/community-partners" target="_blank">Community Partners</a>
+                        </li>
+                        <li><a href="../locations.html" target="_blank">Our Chapters</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links" style="list-style: none; padding: 0;">
+                        <li><a href="https://unitedsikhs.org/in-the-news" target="_blank">In The News</a></li>
+                        <li><a href="https://unitedsikhs.org/category/press-release" target="_blank">Press Releases</a>
+                        </li>
+                        <li><a href="https://unitedsikhs.org/reports" target="_blank">Reports</a></li>
+                        <li><a href="https://unitedsikhs.org/blogs" target="_blank">Blog</a></li>
+                        <li><a href="https://unitedsikhs.org/contact-us" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Subscribe to Newsletter</h4>
+                    <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-bottom:14px;line-height:1.6;">Stay
+                        updated with our latest news and events.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" class="newsletter-input" placeholder="Your email" required />
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                    <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:12px;">
+                        📞 +1-855-US-UMEED (878-6333)<br />
+                        ✉️ contact@unitedsikhs.org
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="https://unitedsikhs.org/privacy-policy/" target="_blank">Privacy Policy</a>
+                    <a href="https://unitedsikhs.org/contact-us/" target="_blank">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" />
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

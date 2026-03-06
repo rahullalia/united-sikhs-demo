@@ -122,6 +122,7 @@
             line-height: 1.5;
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -210,6 +211,23 @@
             }
         }
     </style>
+
+    <!-- SEO & OpenGraph Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="UNITED SIKHS" />
+    <meta property="og:title" content="UNITED SIKHS | Recognize the Human Race as One" />
+    <meta property="og:description"
+        content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities through humanitarian aid, civil rights advocacy, and community education." />
+    <meta property="og:image"
+        content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
+    <meta property="og:url" content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UNITED SIKHS | Recognize the Human Race as One" />
+    <meta name="twitter:description"
+        content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities." />
+    <meta name="twitter:image"
+        content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
 </head>
 
 <body>
@@ -227,15 +245,16 @@
 
     <section class="page-hero">
         <div class="container">
-            <span class="section-label" style="justify-content:center;">Newsroom</span>
-            <h1>Press Releases<br />& Media</h1>
-            <p>Stay updated with the latest news, press releases, and initiatives from UNITED SIKHS.</p>
+            <span class="section-label reveal" style="justify-content:center;">Newsroom</span>
+            <h1 class="section-title reveal-blur">Press Releases<br />& Media</h1>
+            <p class="reveal reveal-delay-2">Stay updated with the latest news, press releases, and initiatives from
+                UNITED SIKHS.</p>
         </div>
     </section>
 
     <section class="section" style="background:var(--bg-muted);">
         <div class="container">
-            <div class="filter-bar">
+            <div class="filter-bar reveal reveal-delay-3">
                 <button class="filter-btn active">All</button>
                 <button class="filter-btn">Sikh Aid</button>
                 <button class="filter-btn">ICHRA</button>
@@ -245,7 +264,7 @@
 
             <div class="press-list">
                 <a href="https://unitedsikhs.org/cdl-cancellations-are-leaving-hardworking-drivers-without-income/"
-                    target="_blank" class="press-item">
+                    target="_blank" class="press-item reveal">
                     <div class="press-date"><span class="day">04</span>Mar 2025</div>
                     <div class="press-content">
                         <h3>CDL Cancellations Are Leaving Hardworking Drivers Without Income</h3>
@@ -256,7 +275,7 @@
                 </a>
 
                 <a href="https://unitedsikhs.org/united-sikhs-responds-to-white-house-comment-unfairly-targeting-sikh-drivers/"
-                    target="_blank" class="press-item">
+                    target="_blank" class="press-item reveal">
                     <div class="press-date"><span class="day">27</span>Feb 2025</div>
                     <div class="press-content">
                         <h3>UNITED SIKHS Responds to White House Comment Unfairly Targeting Sikh Drivers</h3>
@@ -331,7 +350,7 @@
 
             <button class="btn-secondary load-more">Load More Articles →</button>
 
-            <div class="media-contact">
+            <div class="media-contact magic-card reveal">
                 <div style="font-size:2.5rem;">📰</div>
                 <div class="media-contact-text">
                     <h3>Media Inquiries</h3>
