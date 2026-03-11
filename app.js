@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initScrollReveal();
   initNavbarScrollSpy();
+  initMobileNav();
   initAccordion();
   initNumberTickers();
   initMagicCards();
@@ -120,7 +121,7 @@ function initScrollReveal() {
 
 /* ===== NAVBAR SCROLL-SPY ===== */
 function initNavbarScrollSpy() {
-  const navbar = document.getElementById('navbar');
+  const navHeader = document.getElementById('navHeader');
   const navLinks = document.querySelectorAll('.nav-link[data-section]');
   const sections = [];
 
@@ -137,15 +138,15 @@ function initNavbarScrollSpy() {
       requestAnimationFrame(() => {
         const scrollY = window.scrollY;
 
-        // Navbar background on scroll
+        // Nav header background on scroll
         if (scrollY > 80) {
-          navbar.classList.add('scrolled');
+          navHeader.classList.add('scrolled');
         } else {
-          navbar.classList.remove('scrolled');
+          navHeader.classList.remove('scrolled');
         }
 
         // Active section detection
-        let activeSection = sections[0];
+        let activeSection = null;
         for (const s of sections) {
           const rect = s.section.getBoundingClientRect();
           if (rect.top <= 200) {
@@ -173,6 +174,28 @@ function initNavbarScrollSpy() {
       if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    });
+  });
+}
+
+/* ===== MOBILE NAV (Hamburger) ===== */
+function initMobileNav() {
+  const hamburger = document.getElementById('navHamburger');
+  const navbar = document.getElementById('navbar');
+  if (!hamburger || !navbar) return;
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navbar.classList.toggle('open');
+    document.body.style.overflow = navbar.classList.contains('open') ? 'hidden' : '';
+  });
+
+  // Close menu when a nav link is clicked
+  navbar.querySelectorAll('.nav-link, .nav-donate').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navbar.classList.remove('open');
+      document.body.style.overflow = '';
     });
   });
 }

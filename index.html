@@ -20,30 +20,41 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="UNITED SIKHS" />
   <meta property="og:title" content="UNITED SIKHS | Recognize the Human Race as One" />
-  <meta property="og:description" content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities through humanitarian aid, civil rights advocacy, and community education." />
-  <meta property="og:image" content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
+  <meta property="og:description"
+    content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities through humanitarian aid, civil rights advocacy, and community education." />
+  <meta property="og:image"
+    content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
   <meta property="og:url" content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="UNITED SIKHS | Recognize the Human Race as One" />
-  <meta name="twitter:description" content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities." />
-  <meta name="twitter:image" content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
+  <meta name="twitter:description"
+    content="UNITED SIKHS is a UN-affiliated international non-profit committed to empowering disadvantaged communities." />
+  <meta name="twitter:image"
+    content="https://united-sikhs-demo-h67xak4rz-rahul-lalia.vercel.app/images/logo-lockup.png" />
 </head>
 
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
+  <header class="nav-header" id="navHeader">
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
     <a href="index.html" class="nav-logo">
       <img src="images/logo-lockup.png" alt="UNITED SIKHS" class="nav-logo-img" />
     </a>
-    <a href="#about" class="nav-link active" data-section="about"><span class="link-text">About</span></a>
-    <a href="#programs" class="nav-link" data-section="programs"><span class="link-text">Programs</span></a>
-    <a href="#articles" class="nav-link" data-section="articles"><span class="link-text">News</span></a>
-    <a href="locations.html" class="nav-link"><span class="link-text">Chapters</span></a>
-    <a href="press.html" class="nav-link"><span class="link-text">Press</span></a>
-    <a href="donate.html" class="nav-donate">Donate</a>
-  </nav>
+    <a href="donate.html" class="nav-donate-mobile">Donate</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-link"><span class="link-text">Home</span></a>
+      <a href="#about" class="nav-link" data-section="about"><span class="link-text">About</span></a>
+      <a href="#programs" class="nav-link" data-section="programs"><span class="link-text">Programs</span></a>
+      <a href="#articles" class="nav-link" data-section="articles"><span class="link-text">News</span></a>
+      <a href="locations.html" class="nav-link"><span class="link-text">Chapters</span></a>
+      <a href="press.html" class="nav-link"><span class="link-text">Press</span></a>
+      <a href="donate.html" class="nav-donate">Donate</a>
+    </nav>
+  </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
@@ -53,8 +64,7 @@
     <div class="hero-inner">
       <div class="hero-text">
         <div class="hero-badge">
-          <span class="dot"></span>
-          UN-Affiliated Global NGO
+          A United Nations Affiliated Civil Society Global NGO
         </div>
 
         <h1>Recognize the<br /><span class="highlight">Human Race as One</span></h1>
@@ -77,11 +87,12 @@
                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </a>
-          <a href="#programs" class="btn-secondary">
-            Our Work
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
+          <a href="#articles" class="btn-secondary">
+            In The News
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M9.069 2.672v14.928h-6.397c0 0 0 6.589 0 8.718s1.983 3.010 3.452 3.010c1.469 0 16.26 0 20.006 0 1.616 0 3.199-1.572 3.199-3.199 0-1.175 0-23.457 0-23.457h-20.259zM6.124 28.262c-0.664 0-2.385-0.349-2.385-1.944v-7.652h5.331v7.192c0 0.714-0.933 2.404-2.404 2.404h-0.542zM28.262 26.129c0 1.036-1.096 2.133-2.133 2.133h-17.113c0.718-0.748 1.119-1.731 1.119-2.404v-22.12h18.126v22.391z"/>
+              <path d="M12.268 5.871h13.861v1.066h-13.861z"/><path d="M12.268 20.265h13.861v1.066h-13.861z"/><path d="M12.268 23.997h13.861v1.066h-13.861z"/>
+              <path d="M26.129 9.602h-13.861v7.997h13.861v-7.997zM25.063 16.533h-11.729v-5.864h11.729v5.864z"/>
             </svg>
           </a>
         </div>
@@ -144,28 +155,44 @@
 
           <div class="about-highlights reveal-scale stagger-3">
             <div class="about-highlight-item">
-              <div class="icon">🌍</div>
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--saffron)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
               <div>
                 <h4>Global Presence</h4>
                 <p>Operating in 30+ countries across 6 continents</p>
               </div>
             </div>
             <div class="about-highlight-item">
-              <div class="icon">🤝</div>
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--saffron)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
               <div>
                 <h4>UN Affiliated</h4>
                 <p>ECOSOC consultative status with the United Nations</p>
               </div>
             </div>
             <div class="about-highlight-item">
-              <div class="icon">⚖️</div>
+              <div class="icon">
+                <svg width="20" height="20" viewBox="-2 0 19 19" fill="var(--saffron)">
+                  <path d="M9.316 14.722a.477.477 0 0 1-.475.475H1.433a.477.477 0 0 1-.475-.475v-.863a.477.477 0 0 1 .475-.475h7.408a.476.476 0 0 1 .475.475zm-2.767-2.587a.552.552 0 0 1-.392-.163L2.96 8.776a.554.554 0 0 1 .784-.784L6.94 11.19a.554.554 0 0 1-.392.946zm7.33.992L9.435 8.682l1.085-1.084-3.173-3.173-2.97 2.97 3.173 3.172 1.102-1.101 4.445 4.445a.554.554 0 1 0 .784-.784zm-2.33-5.993a.552.552 0 0 1-.391-.162L7.96 3.775a.554.554 0 1 1 .784-.784l3.196 3.197a.554.554 0 0 1-.391.946z"/>
+                </svg>
+              </div>
               <div>
                 <h4>Rights Advocacy</h4>
                 <p>Fighting discrimination and hate crimes globally</p>
               </div>
             </div>
             <div class="about-highlight-item">
-              <div class="icon">📚</div>
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--saffron)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
               <div>
                 <h4>Community Education</h4>
                 <p>Scholarships, language classes, vocational training</p>
@@ -173,16 +200,10 @@
             </div>
           </div>
 
-          <!-- Global Presence Map -->
-          <div class="about-map reveal reveal-delay-4" style="margin-top:28px;">
-            <img src="images/global-map.jpg" alt="UNITED SIKHS global presence map"
-              style="width:100%;border-radius:var(--radius-md);border:1px solid var(--border);" />
-          </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- ===== THREE VERTICALS ===== -->
   <section class="section programs" id="programs">
     <div class="container">
@@ -207,33 +228,7 @@
             <h3>Humanitarian Aid</h3>
             <p>Disaster relief, food distribution, medical camps, and long-term rehabilitation for communities affected
               by natural disasters and conflict.</p>
-            <div class="vertical-initiatives">
-              <h4>Recent Projects</h4>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/" target="_blank">Punjab Floods Relief: Salvaging Lives &
-                    Livelihoods</a>
-                  <div class="tag">Disaster Relief · 2024</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/" target="_blank">Hurricane Beryl: Caribbean Islands Emergency
-                    Response</a>
-                  <div class="tag">Emergency Aid · 2024</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/" target="_blank">Global Langar Program: Free Meals for All</a>
-                  <div class="tag">Ongoing · Worldwide</div>
-                </div>
-              </div>
-            </div>
-            <a href="https://sikhaid.unitedsikhs.org/" class="vertical-cta" target="_blank">
+            <a href="coming-soon.html" class="vertical-cta">
               Explore Sikh Aid →
             </a>
           </div>
@@ -247,36 +242,10 @@
             <span class="vertical-label">ICHRA</span>
           </div>
           <div class="vertical-body">
-            <h3>Civil & Human Rights</h3>
+            <h3>Civil & Human Rights: Legal Services</h3>
             <p>Fighting discrimination, hate crimes, and systemic injustice through legal aid, policy reform, and
               grassroots advocacy.</p>
-            <div class="vertical-initiatives">
-              <h4>Recent Initiatives</h4>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/cdl-cancellations-are-leaving-hardworking-drivers-without-income/"
-                    target="_blank">CDL Cancellations: Standing with Sikh Truck Drivers</a>
-                  <div class="tag">Press Release · 2025</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/united-sikhs-responds-to-white-house-comment-unfairly-targeting-sikh-drivers/"
-                    target="_blank">Response to White House Comment Targeting Sikh Drivers</a>
-                  <div class="tag">Advocacy · 2025</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/" target="_blank">Global Hate Crime Report & Advocacy Coalition</a>
-                  <div class="tag">Campaign · Ongoing</div>
-                </div>
-              </div>
-            </div>
-            <a href="https://unitedsikhs.org/category/ichra/" class="vertical-cta" target="_blank">
+            <a href="coming-soon.html" class="vertical-cta">
               Explore ICHRA →
             </a>
           </div>
@@ -293,33 +262,7 @@
             <h3>Community Empowerment</h3>
             <p>Scholarships, language classes, vocational training, and youth engagement programs that uplift
               communities from within.</p>
-            <div class="vertical-initiatives">
-              <h4>Recent Programs</h4>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/celebrating-women-who-serve-humanity/" target="_blank">Celebrating
-                    Women Who Serve Humanity</a>
-                  <div class="tag">Women Empowerment · 2025</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/commemorating-the-world-day-of-social-justice/" target="_blank">World
-                    Day of Social Justice: Community Events</a>
-                  <div class="tag">Education · 2025</div>
-                </div>
-              </div>
-              <div class="initiative-item">
-                <span class="initiative-dot"></span>
-                <div>
-                  <a href="https://unitedsikhs.org/" target="_blank">Global Civil Rights Survey 2025</a>
-                  <div class="tag">Survey · Active Now</div>
-                </div>
-              </div>
-            </div>
-            <a href="https://unitedsikhs.org/category/ceed/" class="vertical-cta" target="_blank">
+            <a href="coming-soon.html" class="vertical-cta">
               Explore CEED →
             </a>
           </div>
@@ -333,14 +276,24 @@
     <div class="container">
       <div class="articles-header">
         <div>
-          <span class="section-label reveal">Blogs & Press</span>
-          <h2 class="section-title reveal reveal-delay-1">Stories That Matter</h2>
+          <span class="section-label reveal">Press Releases</span>
+          <h2 class="section-title reveal reveal-delay-1">News & Stories</h2>
         </div>
-        <a href="https://unitedsikhs.org/blogs/" class="btn-secondary reveal reveal-delay-2" target="_blank">
+        <a href="coming-soon.html" class="btn-secondary reveal reveal-delay-2">
           View All
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="articles-donate-banner reveal" style="margin-bottom:36px;">
+        <p>Your donation directly funds our humanitarian programs across the globe.</p>
+        <a href="donate.html" class="btn-primary btn-sm">
+          Donate Now
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
         </a>
       </div>
@@ -359,8 +312,7 @@
             <h3>Celebrating Women Who Serve Humanity</h3>
             <p>Recognizing extraordinary women who dedicate their lives to serving communities, breaking barriers, and
               inspiring change through selfless acts of compassion.</p>
-            <a href="https://unitedsikhs.org/celebrating-women-who-serve-humanity/" class="article-read-more"
-              target="_blank">Read More →</a>
+            <a href="coming-soon.html" class="article-read-more">Read More →</a>
           </div>
         </div>
 
@@ -377,7 +329,7 @@
             <h3>Panjab Floods: Salvaging Lives and Livelihoods</h3>
             <p>In the aftermath of the devastating floods in Panjab, our humanitarian relief efforts focused on
               rebuilding lives, distributing essential supplies, and restoring hope.</p>
-            <a href="https://unitedsikhs.org/" class="article-read-more" target="_blank">Read More →</a>
+            <a href="coming-soon.html" class="article-read-more">Read More →</a>
           </div>
         </div>
 
@@ -394,7 +346,7 @@
             <h3>Emergency Response: Caribbean Islands After Hurricane Beryl</h3>
             <p>A devastating hurricane struck the Caribbean, causing severe damage. UNITED SIKHS deployed emergency
               response teams to provide immediate aid to affected families.</p>
-            <a href="https://unitedsikhs.org/" class="article-read-more" target="_blank">Read More →</a>
+            <a href="coming-soon.html" class="article-read-more">Read More →</a>
           </div>
         </div>
       </div>
@@ -545,6 +497,16 @@
           </div>
         </div>
       </div>
+
+      <div class="testimonials-cta reveal" style="text-align:center;margin-top:48px;">
+        <p style="color:var(--text-secondary);font-size:1rem;margin-bottom:16px;">Join the thousands who have made a difference.</p>
+        <a href="donate.html" class="btn-primary">
+          Make a Donation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -558,7 +520,7 @@
           <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:24px;">
             Learn more about our work, how you can get involved, and where your donations go.
           </p>
-          <a href="https://unitedsikhs.org/contact-us/" class="faq-contact-btn reveal reveal-delay-3" target="_blank">
+          <a href="coming-soon.html" class="faq-contact-btn reveal reveal-delay-3">
             Contact us
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
@@ -695,21 +657,21 @@
         <div>
           <h4>Important Links</h4>
           <ul class="footer-links">
-            <li><a href="https://unitedsikhs.org" target="_blank">Home</a></li>
-            <li><a href="https://unitedsikhs.org/about" target="_blank">About Us</a></li>
-            <li><a href="https://unitedsikhs.org/gurudwara-partners" target="_blank">Gurudwara Partners</a></li>
-            <li><a href="https://unitedsikhs.org/community-partners" target="_blank">Community Partners</a></li>
-            <li><a href="https://unitedsikhs.org/locations" target="_blank">Our Chapters</a></li>
+            <li><a href="coming-soon.html">Home</a></li>
+            <li><a href="coming-soon.html">About Us</a></li>
+            <li><a href="coming-soon.html">Gurudwara Partners</a></li>
+            <li><a href="coming-soon.html">Community Partners</a></li>
+            <li><a href="coming-soon.html">Our Chapters</a></li>
           </ul>
         </div>
         <div>
           <h4>Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="https://unitedsikhs.org/in-the-news" target="_blank">In The News</a></li>
-            <li><a href="https://unitedsikhs.org/category/press-release" target="_blank">Press Releases</a></li>
-            <li><a href="https://unitedsikhs.org/reports" target="_blank">Reports</a></li>
-            <li><a href="https://unitedsikhs.org/blogs" target="_blank">Blog</a></li>
-            <li><a href="https://unitedsikhs.org/contact-us" target="_blank">Contact Us</a></li>
+            <li><a href="coming-soon.html">In The News</a></li>
+            <li><a href="coming-soon.html">Press Releases</a></li>
+            <li><a href="coming-soon.html">Reports</a></li>
+            <li><a href="coming-soon.html">Blog</a></li>
+            <li><a href="coming-soon.html">Contact Us</a></li>
           </ul>
         </div>
         <div>
@@ -727,10 +689,10 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 UNITED SIKHS. All rights reserved.</span>
+        <span>© 2026 UNITED SIKHS. All rights reserved.</span>
         <div class="footer-bottom-links">
-          <a href="https://unitedsikhs.org/privacy-policy/" target="_blank">Privacy Policy</a>
-          <a href="https://unitedsikhs.org/contact-us/" target="_blank">Contact Us</a>
+          <a href="coming-soon.html">Privacy Policy</a>
+          <a href="coming-soon.html">Contact Us</a>
         </div>
       </div>
     </div>
