@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initScrollRevel();
     initNavbarScrollSpy();
+    initMobileNav();
     init3DCardTilt();
     initVideoPlayer();
     initHeroParallax();
@@ -43,14 +44,36 @@ function initScrollRevel() {
 
 /* ===== NAVBAR SCROLL ===== */
 function initNavbarScrollSpy() {
-    const navbar = document.getElementById('navbar');
+    const header = document.getElementById('navHeader');
+    if (!header) return;
     window.addEventListener('scroll', () => {
         if (window.scrollY > 80) {
-            navbar.classList.add('scrolled');
+            header.classList.add('scrolled');
         } else {
-            navbar.classList.remove('scrolled');
+            header.classList.remove('scrolled');
         }
     }, { passive: true });
+}
+
+/* ===== MOBILE NAV ===== */
+function initMobileNav() {
+    const hamburger = document.getElementById('navHamburger');
+    const navbar = document.getElementById('navbar');
+    if (!hamburger || !navbar) return;
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navbar.classList.toggle('open');
+        document.body.style.overflow = navbar.classList.contains('open') ? 'hidden' : '';
+    });
+
+    navbar.querySelectorAll('.nav-link, .nav-donate').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            navbar.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
 }
 
 /* ===== 3D CARD TILT ===== */
