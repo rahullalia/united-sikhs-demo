@@ -546,7 +546,7 @@ function initCustomCursor() {
   const cursor = document.createElement('div');
   cursor.style.cssText = `
     position: fixed; width: 20px; height: 20px;
-    border: 2px solid rgba(230, 81, 0, 0.4);
+    border: 2px solid rgba(196, 132, 29, 0.4);
     border-radius: 50%; pointer-events: none;
     z-index: 99998; transition: transform 0.15s ease, width 0.2s, height 0.2s, border-color 0.2s;
     transform: translate(-50%, -50%);
@@ -576,13 +576,13 @@ function initCustomCursor() {
     el.addEventListener('mouseenter', () => {
       cursor.style.width = '40px';
       cursor.style.height = '40px';
-      cursor.style.borderColor = 'rgba(230, 81, 0, 0.6)';
+      cursor.style.borderColor = 'rgba(196, 132, 29, 0.6)';
       dot.style.transform = 'translate(-50%, -50%) scale(1.5)';
     });
     el.addEventListener('mouseleave', () => {
       cursor.style.width = '20px';
       cursor.style.height = '20px';
-      cursor.style.borderColor = 'rgba(230, 81, 0, 0.4)';
+      cursor.style.borderColor = 'rgba(196, 132, 29, 0.4)';
       dot.style.transform = 'translate(-50%, -50%) scale(1)';
     });
   });
@@ -603,7 +603,7 @@ function initShineBorders() {
     shine.style.cssText = `
       position: absolute; top: -50%; left: -50%;
       width: 200%; height: 200%;
-      background: conic-gradient(from 0deg, transparent 0deg, rgba(230, 81, 0, 0.15) 60deg, transparent 120deg);
+      background: conic-gradient(from 0deg, transparent 0deg, rgba(196, 132, 29, 0.15) 60deg, transparent 120deg);
       animation: shineSpin 3s linear infinite;
       pointer-events: none;
     `;
